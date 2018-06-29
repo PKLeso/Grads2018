@@ -2,21 +2,23 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using GroupGit.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GroupGit.Controllers
 {
     public class zeeController : Controller
     {
+        [HttpGet]
         public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult KagisoPost() 
+        [HttpPost]
+        public IActionResult Index(IndexModel indexModel)
         {
-            // TODO: Add methods here...
-            return View();
+            return RedirectToAction("Index");
         }
     }
 }
