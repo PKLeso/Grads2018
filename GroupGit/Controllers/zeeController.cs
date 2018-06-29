@@ -12,5 +12,11 @@ namespace GroupGit.Controllers
         {
             return View();
         }
+
+        public IActionResult KagisoPost() 
+        {
+            // TODO: Add methods here...
+            return View();
+        }
     }
 }
