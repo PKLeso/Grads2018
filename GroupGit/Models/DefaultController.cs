@@ -10,7 +10,10 @@ namespace GroupGit.Models
     {
         public IActionResult Index()
         {
-            return View();
+
+
+            return Content("Hello from zees controler, this application will boom!!!");
+
         }
     }
 }
